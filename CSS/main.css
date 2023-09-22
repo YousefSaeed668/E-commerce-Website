@@ -787,6 +787,7 @@ footer .column:nth-child(4) .payments img {
 .table .cart-table {
   margin-bottom: 15rem;
   border-collapse: collapse;
+  overflow-x: auto;
 }
 .table .cart-table th{
   font-size: var(--fs-2);
