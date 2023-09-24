@@ -1122,6 +1122,11 @@ flex-direction: column;
   display: flex;
   gap: 5rem;
 }
+@media(max-width:767px){
+  .form .wrapper {
+    padding: 1rem;
+  }
+}
 
 .form .wrapper form {
   display: flex;
