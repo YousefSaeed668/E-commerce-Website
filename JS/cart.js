@@ -6,19 +6,6 @@ let cartDetailsArray = [];
 const selectedProducts = JSON.parse(localStorage.getItem('selectedProducts'));
 
 
-for (let i = 0 ; i<30 ; i++){
-    fetch(`https://fakestoreapi.com/products/${i}`).then ((response)=>{
-  console.log(response)
-  let data = response.json();
-  return data;
-  }).then((data)=>{
-  console.log(data.title)
-  })
-
-}
-
-
-
 
 addElementsToPageFrom(selectedProducts)
 
@@ -48,6 +35,9 @@ function addElementsToPageFrom(selectedProducts) {
 }
 
 function updateValue(q){
+  if (q.value < 1){
+    q.value = 1;
+  }
   q.parentElement.nextElementSibling.innerHTML = "$" + q.value * q.parentElement.previousElementSibling.innerHTML.replace("$","");
   let thisId = q.parentElement.parentElement.id;
 
