@@ -297,7 +297,7 @@ header .nav {
     position: absolute;
     height: 50vh;
     width: 100vw;
-    top: 76%;
+    top: 74%;
     left: 0;
     background-color: var(--header-color);
     z-index: 5;
