@@ -9,6 +9,8 @@ if (localStorage.getItem("selectedProducts")) {
 
 addCart.forEach((addIcon) => {
   addIcon.addEventListener("click", (e) => {
+    alert ("The item has been added to the cart ")
+
     let product = e.target.parentElement;
     let productImg = product.querySelector("img").src;
     let productTitle = product.querySelector(".details h3").innerHTML;
